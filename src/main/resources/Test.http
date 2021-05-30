@@ -1,0 +1,49 @@
+###
+POST http://localhost:8080/hotel
+Content-Type: application/json
+
+{
+  "name": "new hotel"
+}
+
+
+
+###
+GET http://localhost:8080/hotel
+
+
+###
+GET http://localhost:8080/hotel/byId/1
+
+###
+PUT http://localhost:8080/hotel/edit/5
+Content-Type: application/json
+
+{
+  "name": "new hotel 2"
+}
+
+###
+DELETE http://localhost:8080/hotel/deleted/2
+
+
+
+###room
+POST http://localhost:8080/room
+Content-Type: application/json
+
+{
+  "number": 21,
+  "floor": 114,
+  "size": 21,
+  "HotelId": 1
+}
+
+###
+GET http://localhost:8080/room/allRoom
+
+###
+GET http://localhost:8080/room/roomById/22
+
+###
+GET http://localhost:8080/room/2
